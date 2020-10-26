@@ -13,6 +13,7 @@ const init = () => {
   console.log(firebase.app().name)
   firebase.auth().onAuthStateChanged((res) => {
     console.log(res)
+    console.log('ahihi')
     if (res) {
       if (res.emailVerified) {
         model.currentUser = {
