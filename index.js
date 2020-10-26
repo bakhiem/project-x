@@ -14,6 +14,8 @@ const init = () => {
   firebase.auth().onAuthStateChanged((res) => {
     console.log(res)
     console.log('ahihi')
+    console.log('ahihi1')
+
     if (res) {
       if (res.emailVerified) {
         model.currentUser = {
